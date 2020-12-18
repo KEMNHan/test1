@@ -10,6 +10,7 @@ namespace {
 // A test that's expected to fail.
 TEST(Foo, Bar) {
   EXPECT_EQ(2, 2);
+  EXPECT_EQ(1, 1);
 }
 
 #if GTEST_HAS_SEH && !GTEST_OS_WINDOWS_MOBILE
