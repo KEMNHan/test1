@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
 # endif
 #endif  // GTEST_OS_WINDOWS
   testing::InitGoogleTest(&argc, argv);
-
+  testing::GTEST_FLAG(output) = "xml:";
   return RUN_ALL_TESTS();
 }
 
